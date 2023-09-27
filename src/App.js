@@ -1,7 +1,15 @@
-import "./App.css";
+import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import Greeting from './components/Greeting';
 
 function App() {
-  return <div className="App"></div>;
+  return (
+    <div className="App">
+      <Routes>
+        <Route path="/" Component={<Greeting />} />
+      </Routes>
+    </div>
+  );
 }
 
 export default App;
